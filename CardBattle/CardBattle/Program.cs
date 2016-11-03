@@ -9,8 +9,18 @@ namespace CardBattle
     {
         static void Main(string[] args)
         {
-            var spadesAce = new Card(Values.Ace, Suit.Spades);
-            Console.WriteLine(spadesAce.ToString());
+            var spadesAce = new Card(Values.Ace, Suit.Spade);
+            Console.WriteLine("I created a " + spadesAce.ToString());
+
+            CardDealer dealer = new CardDealer();
+
+            for(int i =0; i<10; i++)
+            {
+                Card randomCard = dealer.RandomCard();
+                
+                Console.WriteLine("I drew a "  + randomCard.ToString());
+
+            }
             Console.ReadLine();
         }
     }

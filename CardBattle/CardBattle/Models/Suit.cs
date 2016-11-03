@@ -7,9 +7,9 @@ namespace CardBattle.Models
 {
     public enum Suit
     {
-        Clubs,
-        Diamonds,
-        Hearts,
-        Spades
+        Club,
+        Diamond,
+        Heart,
+        Spade
     }
 }

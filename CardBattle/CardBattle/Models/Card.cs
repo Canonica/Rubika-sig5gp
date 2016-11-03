@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CardBattle.Models
 {
-    class Card
+    public class Card
     {
         public Card(Values value, Suit suit)
         {
@@ -13,12 +13,14 @@ namespace CardBattle.Models
             Value = value;
         }
 
+        private readonly Suit _suits;
+
         public Suit Suit { get; set; }
         public Values Value { get; set; }
 
         public override string ToString()
         {
-            return "I created a card " + Suit + " " + Value;
+            return Value + " of " + Suit;
         }
     }
 }

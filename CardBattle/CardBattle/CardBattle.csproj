@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Card.cs" />
+    <Compile Include="Models\CardDealer.cs" />
     <Compile Include="Models\Suit.cs" />
     <Compile Include="Models\Values.cs" />
     <Compile Include="Program.cs" />
